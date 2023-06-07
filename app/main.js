@@ -1,10 +1,13 @@
  let livros = [];
 
- const endpointDaApi = 'git commit -m "adiciona novo arquivo main. js"';
+ const endpointDaApi = 'https://guilhermeonrails.github.io/casadocodigo/livros.json"';
 
  getBuscarLivrosDaApi()
 
 
  async function getBuscarLivrosDaApi() {
-    
+    const res = await fetch(endpointDaApi)
+    livros = await res.jason()
+
+    console.log(livros);
  }
