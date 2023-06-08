@@ -1,13 +1,16 @@
- let livros = []
- const endpointDaApi = 'https://guilhermeonrails.github.io/casadocodigo/livros.json'
+let livros = []
+const endpointDaAPI = 'https://guilhermeonrails.github.io/casadocodigo/livros.json'
+getBuscarLivrosDaAPI()
 
- getBuscarLivrosDaApi()
-
-
- async function getBuscarLivrosDaApi() {
-    const res = await fetch(endpointDaApi)
+async function getBuscarLivrosDaAPI() {
+    const res = await fetch(endpointDaAPI)
     livros = await res.json()
+    let livrosComDesconto = aplicarDesconto(livros)
+    exibirOsLivrosNaTela(livrosComDesconto)
     
-    console.log(livros)
-  
- }
+    
+
+    var valorDeTodos = document.getElementById('valor');
+    valorDeTodos.innerHTML = livrosComDesconto[5].preco.toFixed(2);
+}
+
