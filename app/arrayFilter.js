@@ -8,5 +8,5 @@ const btnOrdenarPorPreco = document.getElementById('btnOrdenarPorPreco');
 
 
 function filtarLivrosDeFront(){
-
+    let livrosFiltrados = livros.filter(livro => livro.categorias == 'front-end' )
 }
