@@ -1,5 +1,5 @@
 const btnFiltrarLivrosFront = document.getElementById('btnFiltrarLivrosFront');
-btnFiltrarLivrosFront.addEventListener('click', filtarLivrosDeFront())
+btnFiltrarLivrosFront.addEventListener('Click', filtarLivrosDeFront())
 
 const btnFiltrarLivrosBack = document.getElementById('btnFiltrarLivrosBack');
 const btnFiltrarLivrosDados = document.getElementById('btnFiltrarLivrosDados');
@@ -8,6 +8,7 @@ const btnOrdenarPorPreco = document.getElementById('btnOrdenarPorPreco');
 
 
 function filtarLivrosDeFront(){
-    let livrosFiltrados = livros.filter(livro => livro.categorias == 'front-end' )
-    console.table(livrosFiltrados);
+    let livrosFiltrados = livros.filter(livro => livro.categoria == 'front-end' )
+    console.table(livrosFiltrados)
 }
+
