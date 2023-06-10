@@ -1,5 +1,5 @@
 const btnFiltrarLivrosFront = document.getElementById('btnFiltrarLivrosFront');
-btnFiltrarLivrosFront.addEventListener('Click', filtarLivrosDeFront())
+btnFiltrarLivrosFront.addEventListener('click', filtarLivrosDeFront())
 
 const btnFiltrarLivrosBack = document.getElementById('btnFiltrarLivrosBack');
 const btnFiltrarLivrosDados = document.getElementById('btnFiltrarLivrosDados');
