@@ -4,7 +4,7 @@
 
 
 function filtarLivrosDeFront(){
-    let livrosFiltrados = livros.filter(livro => livro.categoria == 'dados' );
+    let livrosFiltrados = livros.filter(livro => livro.categoria == 'frond-end' );
     console.table(livrosFiltrados)
     
 }
