@@ -1,14 +1,11 @@
-const btnFiltrarLivrosFront = document.getElementById('btnFiltrarLivrosFront');
-btnFiltrarLivrosFront.addEventListener('click', filtarLivrosDeFront()
-
-);
-
-
-
+ const btnFiltrarLivrosFront = document.getElementById("btnFiltrarLivrosFront");
+ 
+ btnFiltrarLivrosFront.addEventListener("click", filtarLivrosDeFront);
 
 
 function filtarLivrosDeFront(){
-    let livrosFiltrados = livros.filter(livro => livro.categoria == 'dados' )
-    console.log(livrosFiltrados)
+    let livrosFiltrados = livros.filter(livro => livro.categoria == 'dados' );
+    console.table(livrosFiltrados)
+    
 }
 
