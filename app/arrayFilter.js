@@ -1,5 +1,7 @@
- const btnFiltrarLivrosFront = document.getElementById('btnFiltrarLivrosFront');
+const botoes = document.querySelectorAll('.btn')
+botoes.forEach()
  
+console.table(botoes);
  
 
 
