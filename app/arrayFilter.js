@@ -11,7 +11,6 @@ function filtarLivros(){
     exibirOsLivrosNaTela(livrosFiltrados)
 
     
-
     
 }
 
