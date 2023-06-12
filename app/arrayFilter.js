@@ -9,7 +9,6 @@ function filtarLivros(){
 
     console.table(livrosFiltrados)
     exibirOsLivrosNaTela(livrosFiltrados)
-
-    
+  
 }
 
