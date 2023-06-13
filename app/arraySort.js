@@ -12,5 +12,9 @@ function ordenarLivrosPorPreco() {
    exibirOsLivrosNaTela(livrosOrdenados)
 }
 function verificaDisponibilidadeDoLivro(livro) {
-    
+    if(livro.quantidade == 0){
+      return 'livros__imagens'
+    }else {
+      return 'livros__imagens indisponivel'
+    }
 }
