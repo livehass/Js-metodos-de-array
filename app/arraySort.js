@@ -1,0 +1,1 @@
+let btnOrdenarPorPreco = document.getElementById('btnOrdenarPorPreco')
