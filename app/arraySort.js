@@ -1,3 +1,9 @@
 let btnOrdenarPorPreco = document.getElementById('btnOrdenarPorPreco')
 
-btnOrdenarPorPreco.addEventListener()
+btnOrdenarPorPreco.addEventListener("click", ordenarLivrosPorPreco)
+
+
+
+function ordenarLivrosPorPreco() {
+    
+}
