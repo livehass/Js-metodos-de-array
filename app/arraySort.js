@@ -6,6 +6,6 @@ btnOrdenarPorPreco.addEventListener('click', ordenarLivrosPorPreco)
 
 function ordenarLivrosPorPreco() {
 
-    livros.sort()
-
+ let livrosOrdenados = livros.sort()
+   exibirOsLivrosNaTela(livrosOrdenados)
 }
