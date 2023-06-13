@@ -5,4 +5,5 @@ btnOrdenarPorPreco.addEventListener('click', ordenarLivrosPorPreco)
 
 
 function ordenarLivrosPorPreco() {
+    
 }
