@@ -9,8 +9,13 @@ function filtarLivros(){
     exibirOsLivrosNaTela(livrosFiltrados)
 
     if(categoria == 'disponivel'){
-        
+        exibeValorTotalDosLivrosNaTela()
     }
   
 }
-
+function exibeValorTotalDosLivrosNaTela() {
+    elementoComValorTotalDeLivrosDisponiveis.innerHTML = `
+    
+    
+    `
+}
