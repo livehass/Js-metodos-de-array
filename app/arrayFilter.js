@@ -15,7 +15,9 @@ function filtarLivros(){
 }
 function exibeValorTotalDosLivrosNaTela() {
     elementoComValorTotalDeLivrosDisponiveis.innerHTML = `
-    
+    <div class="livros__disponiveis">
+        <p>Todos os livros disponíveis por R$ <span id="valor"><></span></p>
+   </div>
     
     `
 }
