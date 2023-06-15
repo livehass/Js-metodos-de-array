@@ -2,7 +2,8 @@
 
 <h2>Método .concat()</h2>
 <h3>O método concat junta dois (ou mais) arrays em um novo array, sem alterar os já existentes.</h3>
-```js
+
+```Js
 [ 🏀 , 🏀 , 🏀 ].concat( [ ⚾ , ⚾ ] ) => [🏀 , 🏀 , 🏀, ⚾ , ⚾ ]
 ```
 <h2>Método .pop()</h2>
@@ -11,59 +12,93 @@
 ```js
 [ 🏀 , 🏀 , 🏀, 🏀 , ⚽ ].pop( ) => [🏀 , 🏀 , 🏀, 🏀]
 ```
+
 <h2>Método .push( )</h2>
 <h3>O método push adiciona um novo elemento no final do array, aumentando seu tamanho.</h3>
+
 ```js
 [🏀 , 🏀 , 🏀].push(🏈) => [ 🏀 , 🏀 , 🏀, 🏈 ]
 ```
 <h2>Método .includes()</h2>
 <h3>O método includes verifica se um elemento está contido em um array e retorna true se o elemento estiver contido ou false caso contrário.</h3>
+
 ```js
 [ ⚾ , 🏈, ⚽, 🏀 ].includes( ⚽ ) => true
 ```
 <h2>Método .fill( )</h2>
 <h3>O método fill preenche os elementos especificados em um array com um determinado valor.</h3>
+
 ```js
 [ ⚾ , 🏈, ⚽, 🏀 ].fill( ⚽, 1 ) => [ ⚾ , ⚽, ⚽, 🏀 ] [ ⚾ , 🏈, ⚽, 🏀 ].fill( ⚽ ) => [ ⚽, ⚽, ⚽, ⚽ ]
 ```
 <h2>Método .indexOf( )</h2>
 <h3>O método indexOf retorna o primeiro índice encontrado de um valor especificado. Se o valor não for encontrado o método retorna -1.</h3>
+
 ```js
 [ ⚾ , 🏈, ⚽, 🏀, ⚽ ].indexOf( ⚽ ) => 2
 ```
 <h2>Método .reverse( )</h2>
 <h3>O método reverse inverte a ordem dos elementos de um array e substitui o array original.</h3>
+
 ```js
 [ ⚾ ,🏈, ⚽, 🏀 ].reverse( ) => [🏀, ⚽,🏈, ⚾]
 ```
 <h2>Método .slice( )</h2>
 <h3>O método slice retorna elementos de um array, selecionados de determinada posição de início até determinada posição final. O elemento na posição final não é incluso.</h3>
+
 ```js
 [ ⚾ , 🏈, ⚽, 🏀, 🏐 ].slice( 1, 3 ) => [ 🏈, ⚽ ]
 ```
 <h2>Método .some( )</h2>
 <h3>O método some verifica se algum elemento do array passa em um teste. Esse teste é feito através de uma função callback. O método executa a função de callback para cada elemento uma vez e retorna true se o teste for true para um dos elementos, e false se o teste for false para todos os elementos. Além disso, o método não executa a função callback para arrays vazios e não altera o array.</h3>
+
 ```js
 [ ⚾ , 🏈, ⚽, 🏀, 🏐 ].some( ( 🏐 ) ⇒ { return bola === 🏐 } ) => true
 ```
 <h2>Método .join( )</h2>
 <h3>O método join puxa elementos de um array e lista no formato de string, o resultado da operação puxou as propriedades do array e as listou de acordo com o que foi determinado.</h3>
+
 ```js
 [ ⚾ , 🏈, ⚽, 🏀, 🏐 ].join() ⇒ ⚾,🏈,⚽,🏀,🏐 [ ⚾ , 🏈, ⚽, 🏀, 🏐 ].join(‘ ’) ⇒ ⚾🏈⚽🏀🏐 [ ⚾ , 🏈, ⚽, 🏀, 🏐 ].join(‘-’) ⇒ ⚾-🏈-⚽-🏀-🏐
 ```
+<h2>Método .shift( )</h2>
+<h3>O método shift é parecido com o método .pop() mas ao invés de remover o último elemento do array, ele é usado para remover o primeiro elemento do array.</h3>
+
+```js
+[⚽, 🏐 , 🏐 , 🏐, 🏐].shift( ) ⇒[🏐 , 🏐 , 🏐, 🏐]
+```
 <h2></h2>
 <h3></h3>
+
 ```js
+
+```
+<h2></h2>
+<h3></h3>
+
+```js
+
+```
+<h2></h2>
+<h3></h3>
+
+```js
+
+```
+<h2></h2>
+<h3></h3>
+
+```js
+
 ```
 
 
 
 
 
-Método .shift( )
-[⚽, 🏐 , 🏐 , 🏐, 🏐].shift( ) ⇒[🏐 , 🏐 , 🏐, 🏐]
 
-O método shift é parecido com o método .pop() mas ao invés de remover o último elemento do array, ele é usado para remover o primeiro elemento do array.
+
+
 
 Método .unshift( )
 [🏀 , 🏀 , 🏀].unshift(🏐) ⇒ [ 🏐, 🏀 , 🏀 , 🏀]
