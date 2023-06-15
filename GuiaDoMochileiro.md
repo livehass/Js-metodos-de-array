@@ -1,10 +1,15 @@
  <h1 align="center">Guia do Mochileiro JavaScript.</h1>
-js```
-Método .concat( )
+
+
+
+
+| Método .concat( )| **O método concat junta dois (ou mais) arrays em um novo array, sem alterar os já existentes.** |
+
+```js
 [ 🏀 , 🏀 , 🏀 ].concat( [ ⚾ , ⚾ ] ) => [🏀 , 🏀 , 🏀, ⚾ , ⚾ ]
 ```
 
-O método concat junta dois (ou mais) arrays em um novo array, sem alterar os já existentes.
+
 
 Método .pop( )
 [ 🏀 , 🏀 , 🏀, 🏀 , ⚽ ].pop( ) => [🏀 , 🏀 , 🏀, 🏀]
