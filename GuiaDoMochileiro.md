@@ -2,9 +2,8 @@
 
 
 <div>
-<h2 align="center">Método .concat()</h2>
-<h3 align="center">O método concat junta dois (ou mais) arrays em um novo array, sem alterar os já existentes.</h3>
-
+<h2>Método .concat()</h2>
+<h3>O método concat junta dois (ou mais) arrays em um novo array, sem alterar os já existentes.</h3>
 ```js
 [ 🏀 , 🏀 , 🏀 ].concat( [ ⚾ , ⚾ ] ) => [🏀 , 🏀 , 🏀, ⚾ , ⚾ ]
 ```
