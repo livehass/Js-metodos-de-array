@@ -4,21 +4,22 @@
 <div>
 <h2>Método .concat()</h2>
 <h3>O método concat junta dois (ou mais) arrays em um novo array, sem alterar os já existentes.</h3>
+</div>
+
 ```js
-
 [ 🏀 , 🏀 , 🏀 ].concat( [ ⚾ , ⚾ ] ) => [🏀 , 🏀 , 🏀, ⚾ , ⚾ ]
-
 ```
 
 
 
-```js
+
+
+
 
 Método .pop( )
 
 [ 🏀 , 🏀 , 🏀, 🏀 , ⚽ ].pop( ) => [🏀 , 🏀 , 🏀, 🏀]
 
-```
 O método pop remove o último elemento de um array.
 
 Método .push( )
