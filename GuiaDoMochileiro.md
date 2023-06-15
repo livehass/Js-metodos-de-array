@@ -18,7 +18,7 @@ Método .pop( )
 
 [ 🏀 , 🏀 , 🏀, 🏀 , ⚽ ].pop( ) => [🏀 , 🏀 , 🏀, 🏀]
 
-``
+```
 O método pop remove o último elemento de um array.
 
 Método .push( )
