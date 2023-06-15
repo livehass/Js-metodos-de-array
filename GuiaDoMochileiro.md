@@ -1,4 +1,4 @@
-# Guia do Mochileiro JavaScript
+ <h1 align="center">Guia do Mochileiro JavaScript.</h1>
 js```
 Método .concat( )
 [ 🏀 , 🏀 , 🏀 ].concat( [ ⚾ , ⚾ ] ) => [🏀 , 🏀 , 🏀, ⚾ , ⚾ ]
