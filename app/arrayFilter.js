@@ -11,6 +11,7 @@ function filtarLivros(){
 
     if(categoria == 'disponivel'){
         const valorTotal = calcularValorTotalDeLivrosDisponiveis(livros)
+        console.log(valorTotal)
         exibeValorTotalDosLivrosNaTela()
     }
   
