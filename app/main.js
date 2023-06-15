@@ -7,10 +7,5 @@ async function getBuscarLivrosDaAPI() {
     livros = await res.json()
     let livrosComDesconto = aplicarDesconto(livros)
     exibirOsLivrosNaTela(livrosComDesconto)
-    
-    
-
-    var valorDeTodos = document.getElementById('valor');
-    valorDeTodos.innerHTML = livrosComDesconto[5].preco.toFixed(2);
 }
 
