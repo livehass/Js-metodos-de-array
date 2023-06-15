@@ -67,125 +67,114 @@
 ```js
 [⚽, 🏐 , 🏐 , 🏐, 🏐].shift( ) ⇒[🏐 , 🏐 , 🏐, 🏐]
 ```
-<h2></h2>
-<h3></h3>
+<h2>Método .unshift( )</h2>
+<h3>O método unshift é parecido com o que método .push() realiza, mas ao invés de adicionar no final do array, ele é utilizado para adicionar um elemento no início de um array.</h3>
 
 ```js
-
-```
-<h2></h2>
-<h3></h3>
-
-```js
-
-```
-<h2></h2>
-<h3></h3>
-
-```js
-
-```
-<h2></h2>
-<h3></h3>
-
-```js
-
-```
-
-
-
-
-
-
-
-
-
-Método .unshift( )
 [🏀 , 🏀 , 🏀].unshift(🏐) ⇒ [ 🏐, 🏀 , 🏀 , 🏀]
+```
+<h2>Método .splice( )</h2>
+<h3>Com o método splice conseguimos escolher um índice inicial e final para substituirmos valores no lugar deles. E também podemos remover itens, no segundo exemplo, foram removidos três elementos a partir da posição dois.</h3>
 
-O método unshift é parecido com o que método .push() realiza, mas ao invés de adicionar no final do array, ele é utilizado para adicionar um elemento no início de um array.
-
-Método .splice( )
+```js
 [ ⚾ , 🏈, ⚽, 🏀, 🏐 ].splice( 1, 2, 🎱 ) ⇒ [⚾ ,🎱, 🏀, 🏐 ] [ ⚾ , 🏈, ⚽, 🏀, 🏐 ].splice( 2, 3) ⇒ [⚾, 🏈 ]
+```
+<h2>Método .length( )</h2>
+<h3>O método length define ou retorna o número de elementos em um array.
+</h3>
 
-Com o método splice conseguimos escolher um índice inicial e final para substituirmos valores no lugar deles. E também podemos remover itens, no segundo exemplo, foram removidos três elementos a partir da posição dois.
-
-Método .length( )
+```js
 [ ⚾ , 🏈, ⚽, 🏀, 🏐 ].length(3) ⇒ ⚾ , 🏈, ⚽ [ ⚾ , 🏈, ⚽, 🏀, 🏐 ].length() ⇒ 5
+```
+<h2>Método .sort( )</h2>
+<h3>O método toString retorna uma string com todos os valores do array separados por vírgulas.</h3>
 
-O método length define ou retorna o número de elementos em um array.
-
-Método .sort( )
+```js
 [ ⚾ , 🏈, ⚽, 🏀, 🏐 ].sort() ⇒ ⚽,⚾,🏀,🏈,🏐
+```
+<h2>Método .toString( )</h2>
+<h3></h3>
 
-O método sort ordena os elementos do próprio array e retorna o array. A ordenação padrão é de acordo com a pontuação de código unicode.
-
-Método .toString( )
+```js
 [ ⚾ , 🏈, ⚽, 🏀, 🏐 ].toString ⇒ ⚾,🏈,⚽,🏀,🏐
+```
+<h2>Método .findIndex( )</h2>
+<h3>O método findIndex retorna o índice no array do primeiro elemento que satisfizer a função de teste provida. Caso contrário, retorna -1, indicando que nenhum elemento passou no teste.</h3>
 
-O método toString retorna uma string com todos os valores do array separados por vírgulas.
-
-Método .findIndex( )
+```js
 [ ⚾ , 🏈, ⚽, 🏀, 🏐 ].findIndex(emoji => emoji === “⚽”) ⇒ 2
+```
+<h2>Método .find( )</h2>
+<h3>O método find é utilizado para procurar um elemento dentro do array que atenda a condição atribuída a ele, que retornará o primeiro elemento encontrado. Ele percorre todo o array buscando o elemento que atenda a condição e retorna o primeiro que foi encontrado, caso não encontre retorna undefined. Este método não executa caso o array esteja vazio e não altera o array original</h3>
 
-O método findIndex retorna o índice no array do primeiro elemento que satisfizer a função de teste provida. Caso contrário, retorna -1, indicando que nenhum elemento passou no teste.
-
-Método .find( )
+```js
 [ ⚾ , 🏈, ⚽, 🏀, 🏐 ].find( bola ⇒ bola.formato === “redonda” ) => ⚾
+```
+<h2>Método .at( )</h2>
+<h3>O at acessar os elementos de um array usando um índice inteiro positivo e negativo, sendo que o índice negativo enumera os itens de trás para frente, portando o 🏐 está posicionado no índice -1.</h3>
 
-O método find é utilizado para procurar um elemento dentro do array que atenda a condição atribuída a ele, que retornará o primeiro elemento encontrado. Ele percorre todo o array buscando o elemento que atenda a condição e retorna o primeiro que foi encontrado, caso não encontre retorna undefined. Este método não executa caso o array esteja vazio e não altera o array original
-
-Método .at( )
+```js
 [ ⚾ , 🏈, ⚽, 🏀, 🏐 ].at(-1) ⇒ 🏐 / [ ⚾ , 🏈, ⚽, 🏀, 🏐 ].at(1) ⇒ 🏈
+```
+<h2>Método .isArray( )</h2>
+<h3>O método Array.isArray verifica se a variável é um array e retorna true ou false.</h3>
 
-O at acessar os elementos de um array usando um índice inteiro positivo e negativo, sendo que o índice negativo enumera os itens de trás para frente, portando o 🏐 está posicionado no índice -1.
-
-Método .isArray( )
+```js
 var bolas = [ ⚾ , 🏈, ⚽, 🏀, 🏐 ] Array.isArray(bolas) ⇒ true
+```
+<h2>Método .every( )</h2>
+<h3>O método every verifica se cada elemento do array passa em um teste. Esse teste é feito através de uma função callback. O método executa a função de callback para cada elemento uma vez e retorna true se o teste for true para todos os elementos, e false se o teste for false para pelo menos um elemento. Além disso, o método não executa a função callback para arrays vazios e não altera o array.</h3>
 
-O método Array.isArray verifica se a variável é um array e retorna true ou false.
-
-Método .every( )
+```js
 [ ⚾ , 🏈, ⚽, 🏀, 🏐 ].every( ( bola ) ⇒ { return bola === 🏐 } ) => false
+```
+<h2>Método .filter( )</h2>
+<h3>O método filter usa uma função callback de teste e executa ela para cada elemento do array. Ele retorna um novo array com os elementos que passarem no teste.</h3>
 
-O método every verifica se cada elemento do array passa em um teste. Esse teste é feito através de uma função callback. O método executa a função de callback para cada elemento uma vez e retorna true se o teste for true para todos os elementos, e false se o teste for false para pelo menos um elemento. Além disso, o método não executa a função callback para arrays vazios e não altera o array.
-
-Método .filter( )
+```js
 [ ⚾ , 🏈, ⚽, 🏀, 🏐 ].filter( ( bola ) ⇒ { return bola !== 🏈 } ) => [ ⚾, ⚽, 🏀, 🏐 ]
+```
+<h2>Método .map( )</h2>
+<h3>O método map usa uma função callback de teste e executa ela para cada elemento do array, retornando um novo array modificado. Não executa a função de callback para arrays vazios.</h3>
 
-O método filter usa uma função callback de teste e executa ela para cada elemento do array. Ele retorna um novo array com os elementos que passarem no teste.
-
-Método .map( )
+```js
 [🏀, 🏀,🏀,🏀 ].map( console.log(( bola ) ⇒ { return 🏈 }) ) => [ 🏈, 🏈, 🏈, 🏈 ]
+```
+<h2>Método .forEach( )</h2>
+<h3>O método forEach usa uma função callback e executa ela para cada elemento do array. Não executa a função de callback para arrays vazios e não retorna um novo array, diferente do método map.</h3>
 
-O método map usa uma função callback de teste e executa ela para cada elemento do array, retornando um novo array modificado. Não executa a função de callback para arrays vazios.
-
-Método .forEach( )
+```js
 [🏀, 🏀,🏀,🏀 ].forEach( ( bola ) ⇒ { console.log( bola + ⚽)} ) => 🏀⚽🏀⚽🏀⚽
+```
+<h2>Método .copyWithin( )</h2>
+<h3>O método copyWithin copia os elementos do array para outra posição no array, ele não adiciona itens apenas substitui os valores existentes.</h3>
 
-O método forEach usa uma função callback e executa ela para cada elemento do array. Não executa a função de callback para arrays vazios e não retorna um novo array, diferente do método map.
-
-Método .copyWithin( )
+```js
 [ ⚾ , 🏈, ⚽, 🏀 ].copyWithin(2,0) ⇒ [ ⚾ , 🏈, ⚾ , 🏈 ]
+```
+<h2>Método .lastIndexOf( )</h2>
+<h3>O método lastIndexOf retorna o valor do último índice especificado, se o valor não for encontrado ele retorna -1.</h3>
 
-O método copyWithin copia os elementos do array para outra posição no array, ele não adiciona itens apenas substitui os valores existentes.
-
-Método .lastIndexOf( )
+```js
 [ ⚾ , 🏈, ⚽, 🏀, 🏐 ].lastIndexOf(⚽) ⇒ 2
+```
+<h2>Método .valueOf( )</h2>
+<h3>O método valueOf é usado para retornar o array. É um método padrão do objeto Array. Este método retorna todos os itens na mesma matriz. Ele não altera o conteúdo original da matriz e não contém nenhum valor de parâmetro.</h3>
 
-O método lastIndexOf retorna o valor do último índice especificado, se o valor não for encontrado ele retorna -1.
-
-Método .valueOf( )
+```js
 [ ⚽, ⚾ , 🏀, 🏐 ].valueOf() ⇒ [ ⚽, ⚾ , 🏀, 🏐 ]
+```
+<h2>Método .reduce( )</h2>
+<h3>O método reduce executa uma função redutora para o elemento array, ele retorna um único valor que é o resultado acumulado da função. Ele não executa a função para elementos de array vazios e não altera a matriz original.</h3>
 
-O método valueOf é usado para retornar o array. É um método padrão do objeto Array. Este método retorna todos os itens na mesma matriz. Ele não altera o conteúdo original da matriz e não contém nenhum valor de parâmetro.
-
-Método .reduce( )
+```js
 [ 🥦, 🍅, 🥕, 🍆 ].reduce((valor, elemento) => valor + elemento, 0)) ⇒ 🥗
+```
+<h2>Método .keys( )</h2>
+<h3>O método keys retorna um novo array composto pelas chaves (posições) do array o qual ele foi aplicado.</h3>
 
-O método reduce executa uma função redutora para o elemento array, ele retorna um único valor que é o resultado acumulado da função. Ele não executa a função para elementos de array vazios e não altera a matriz original.
-
-Método .keys( )
+```js
 [ ⚾ , 🏈, ⚽, 🏀, 🏐 ].keys() => ["0","1","2","3"]
+```
 
-O método keys retorna um novo array composto pelas chaves (posições) do array o qual ele foi aplicado.
+
